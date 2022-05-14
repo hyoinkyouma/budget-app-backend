@@ -18,7 +18,8 @@ const saveToMongo = (title, price) => {
     timeDate: timeStamp(),
   });
 
-  newExpense.save();
+  const logThis = newExpense.save();
+  console.log(logThis);
 };
 
 const timeStamp = () => {

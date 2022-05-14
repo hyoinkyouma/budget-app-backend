@@ -11,6 +11,7 @@ router.post("/", (req, res) => {
   const name = req.body.name;
   const price = req.body.price;
   responseSave(name, price);
+  res.json({ message: "sucess" });
 });
 
 module.exports = router;
